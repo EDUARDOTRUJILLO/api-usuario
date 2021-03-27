@@ -17,4 +17,7 @@ mysqlConnection.connect(function(err){
     }
 });
 
+//const pool = mysql.createPool(mysqlConnection);
+
 module.exports = mysqlConnection;
+//module.exports = pool;
