@@ -1,6 +1,7 @@
 const {Router} = require('express');
 const router=Router();
 const unders = require('underscore');
+const mysqlConnection = require('../database');
 
 router.get('/ejemplo',(req,res)=>{
     res.send('Ejemplo');
