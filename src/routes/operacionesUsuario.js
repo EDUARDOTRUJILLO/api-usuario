@@ -14,7 +14,7 @@ router.get('/usuarios',(req,res)=>{
     });
 });
 //Insertar Usuario
-router.post('/usuarios',(req,res)=>{
+router.post('/nuevoUsuario',(req,res)=>{
     mysqlConnection.query(`INSERT INTO usuario SET ?`,req.body,(err,row,fields)=>{
         if(!err){
             res.json(row);
